@@ -1,0 +1,128 @@
+@import '../../App.scss';
+
+.product-single {
+    padding: 30px 0;
+    font-size: 15px;
+    font-weight: 300;
+
+    .contentImg {
+        width: 45%;
+
+        .mainImg {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            img {
+                // width: 80%;
+                height: 350px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .subImg {
+            img {
+                width: calc(100%/3.3);
+                height: 150px;
+                cursor: pointer;
+                border-radius: 10px;
+                object-fit: cover;
+                object-position: center;
+
+                &:hover {
+                    border: 3px solid #FF6433;
+                    transform: scale(50px, 50px);
+                    transition: all .1s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .product-details {
+        padding: 25px 40px;
+        width: 55%;
+
+        .price {
+            margin: 10px 0;
+            padding: 10px 30px;
+            background-color: rgba(0, 0, 0, .02);
+
+            .discountAndPrice {
+                .discountPercentage {
+                    background-color: #FF6433;
+                    border-radius: 3px;
+                    padding: 2px 10px;
+                    margin: 0 20px;
+                    color: #fff;
+                    font-weight: 900;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .Quantity {
+        font-size: 20px;
+        margin: 30px 0;
+
+        .qty-change {
+            button {
+                padding: 0 5px;
+                background-color: #FF6433;
+                color: #fff;
+                border-radius: 3px;
+            }
+
+            span {
+                margin: 0px 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .buttonCart {
+        margin: 20px 0;
+
+        button,
+        a {
+            margin-right: 15px;
+            padding: 8px 15px;
+            background-color: #FFEEE8;
+            color: #FF6433;
+            border: 1px solid #FF6433;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        a{
+            background-color: #FF6433;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    .product-single {
+        flex-direction: column;
+
+        .contentImg {
+            width: 100% ;
+            margin: 20px 0;
+        }
+        .product-details{
+            width: 100%;
+            margin: 10px 0;
+        }
+
+    }
+    .buttonCart{
+        flex-direction: column;
+        button , a {
+            font-size: 10px;
+            flex-wrap: nowrap;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@import '../../App.scss';
+@import "../ProductSinglePage/ProductSinglePage.scss";
+
+.cartBody {
+    width: 75%;
+
+    .cartTr {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, .02);
+
+        .Quantity {
+            font-size: 15px;
+            margin: 10px 0;
+
+            .qty-change {
+                button {
+                    padding: 0 5px;
+                    background-color: #FF6433;
+                    color: #fff;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+
+                span {
+                    margin: 0px 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .cartImg {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .contentProduct {
+            margin: 0 auto;
+
+            .oldPrice {
+                text-decoration: line-through;
+                color: rgba(0, 0, 0, 0.2)
+            }
+
+            .deleteItem {
+                background-color: #FF6433;
+                text-align: center;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+        }
+    }
+
+}
+
+
+.notDefineProduct{ 
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: fill;
+        object-position: center;
+    }
+    .goToHome{
+        border: 1px solid #FF6433;
+        background-color: #FF6433;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 1px 1px 4px #333;
+        padding: 4px 10px;
+    }
+}
+
+.cart-cfoot-r{
+    .total-txt{
+        border-bottom: 2px solid #ddd;
+        padding: 10px ;
+        font-size: 18px;
+        span{
+            font-size: 20px;
+        }
+    }
+    .contentProduct{
+        padding: 10px;
+        border-bottom: 1px solid #000;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .contentCart{
+        flex-direction: column;
+        // background-color: #FF6433;
+        .cartBody{
+            width: auto;
+            .cartTr{
+                padding: 10px;
+                .cartImg{
+                    width: 30%;
+                    padding: 0px 10px;
+                    img{
+                        width: 100%;
+                        height: 100px;
+                        object-fit: fill;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+        .right {
+            margin: 0 auto;
+        }
+    }
+}
