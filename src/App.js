@@ -17,6 +17,7 @@ import SearchPage from "./pages/SearchPage/SearchPage";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import LayOut from "./components/LayOut/LayOut";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   return (
@@ -30,8 +31,6 @@ function App() {
               <Route path="category/:category" element={<CategoryProduct />} />
               <Route path="search/:search" element={<SearchPage />} />
               <Route path="cart" element={<Cart />} />
-              {/* <Route path="/login" element={<Login />} /> */}
-              {/* <Route path="/register" element={<Register />} /> */}
             </Route>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>

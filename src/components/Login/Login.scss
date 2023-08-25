@@ -1,17 +1,19 @@
 @import '../../App.scss';
 
 .wrapper {
-    background: linear-gradient(#3c279b, #9198e5);
+    background: linear-gradient(#f94e30, #f03716);
     padding: 30px;
     height: 100vh;
-    .goToHome{  
+
+    .goToHome {
         display: flex;
         align-items: center;
         justify-content: center;
-        a{
-            border: #3c279b;
-            background-color: #3c279b;
-            color:#fff;
+
+        a {
+            border: #f94e30;
+            background-color: #f94e30;
+            color: #fff;
             padding: 5px 15px;
             border-radius: 20px;
             text-align: center;
@@ -35,15 +37,14 @@
 
             h4 {
                 position: absolute;
-                top: 15px;
+                top: 0px;
                 left: 0;
-                background-color: #3c279b;
-                font-size: 12px;
+                background-color: #f94e30;
+                font-size: 20px;
                 padding: 4px 10px;
                 color: #fff;
-                border-top-right-radius: 20px;
-                border-bottom-right-radius: 20px;
-                font-weight: 200;
+                border-top-left-radius: 20px;
+                font-weight: 600;
             }
 
             form {
@@ -51,25 +52,26 @@
                 padding: 0px 20px;
 
                 .LoginYourAccount {
-                    color: #3c279b;
-                    font-weight: 600;
-                    font-size: 25px;
+                    color: #f94e30;
+                    font-weight: 700;
+                    font-size: 30px;
                     margin-bottom: 20px;
                 }
 
                 input {
                     background-color: transparent;
-                    border-bottom: 2px solid #3c279b;
+                    border-bottom: 2px solid #f94e30;
                     width: 90%;
                     margin: 10px 0;
-                    padding: 0px 5px;
+                    padding: 7px 5px;
+                    // padding: 10px 0;
                 }
 
                 button {
-                    border: 1px solid #3c279b;
-                    background-color: #3c279b;
+                    border: 1px solid #f94e30;
+                    background-color: #f94e30;
                     color: #fff;
-                    padding: 4px 15px;
+                    padding: 4px 30px;
                     border-radius: 20px;
                     font-size: 14px;
                     margin: 10px 0;
@@ -77,12 +79,12 @@
 
                 .createAccount {
                     font-size: 12px;
-                    color: #3c279b;
+                    color: #f94e30;
                 }
 
                 .forgetPassword {
                     font-size: 13px;
-                    color: #3c279b;
+                    color: #f94e30;
                     text-decoration: underline;
                     margin-top: 10px;
                 }
@@ -97,13 +99,12 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        // .goToHome {}
 
-        .goToHome{
-
-        }
         .inner {
             width: 100% !important;
             display: block;
+
             .image-holder {
                 width: 100% !important;
                 display: none;
@@ -111,7 +112,7 @@
 
             .right {
                 width: 100% !important;
-                height: 400px;
+                height: 500px;
             }
         }
     }

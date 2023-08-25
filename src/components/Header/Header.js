@@ -64,7 +64,7 @@ function Header() {
                 <li>
                   <span>
                     <Link to="/login">
-                      <i class="fa-solid fa-right-to-bracket mx-1"></i>
+                      <i className="fa-solid fa-right-to-bracket mx-1"></i>
                       Log In
                     </Link>
                   </span>
