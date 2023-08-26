@@ -9,15 +9,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        // backdrop-filter: blur(20px);
 
         a {
             border: #f94e30;
             background-color: #f94e30;
             color: #fff;
-            padding: 5px 15px;
+            padding: 5px 25px;
             border-radius: 20px;
             text-align: center;
             margin: 20px 0;
+            box-shadow: 3px 3px 4px #444;
+
         }
     }
 
@@ -32,7 +35,6 @@
             width: 35%;
             background-color: #fff;
             border-radius: 20px;
-
             position: relative;
 
             h4 {
@@ -52,7 +54,7 @@
                 padding: 0px 20px;
 
                 .LoginYourAccount {
-                    color: #f94e30;
+                    color: #333;
                     font-weight: 700;
                     font-size: 30px;
                     margin-bottom: 20px;
@@ -75,6 +77,8 @@
                     border-radius: 20px;
                     font-size: 14px;
                     margin: 10px 0;
+                    box-shadow: 3px 3px 4px #444;
+
                 }
 
                 .createAccount {
@@ -111,6 +115,7 @@
             }
 
             .right {
+                box-shadow: 3px 3px 4px #444;
                 width: 100% !important;
                 height: 500px;
             }
