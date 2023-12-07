@@ -12,6 +12,9 @@ const fetchFromLocalStorage = () => {
 const storeInLocalStorage = (data) => {
   localStorage.setItem("cart", JSON.stringify(data));
 };
+
+
+
 const initialState = {
   cart: fetchFromLocalStorage(),
   totalValue: 0,
